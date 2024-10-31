@@ -1,0 +1,1065 @@
+2024-06-11T08:32:16.434Z | info | Logger initialized with minimum log level silly | {"NODE_ENV":"development"}
+2024-06-11T08:32:16.437Z | info | 🔁 Initializing connection to the database | {"NODE_ENV":"development"}
+2024-06-11T08:32:16.437Z | info | Connecting to database: mysql://root:root@localhost:3306/delawaredb?serverTimezone=UTC | {"NODE_ENV":"development"}
+2024-06-11T08:32:16.438Z | info | ✅ Successfully initialized connection to the database | {"NODE_ENV":"development"}
+2024-06-11T08:32:16.989Z | info | Server listening on http://localhost:9000 | {"NODE_ENV":"development"}
+2024-06-11T08:32:25.312Z | info | ⏩ OPTIONS /api/company | {"NODE_ENV":"development"}
+2024-06-11T08:32:25.314Z | info | ✅ OPTIONS 204 /api/company | {"NODE_ENV":"development"}
+2024-06-11T08:32:25.320Z | info | ⏩ GET /api/company | {"NODE_ENV":"development"}
+2024-06-11T08:32:25.551Z | info | ✅ GET 200 /api/company | {"NODE_ENV":"development"}
+2024-06-11T08:32:25.657Z | info | ⏩ OPTIONS /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:32:25.658Z | info | ✅ OPTIONS 204 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:32:25.660Z | info | ⏩ OPTIONS /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:32:25.661Z | info | ✅ OPTIONS 204 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:32:25.663Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:32:25.668Z | error | jwt expired | {"NODE_ENV":"development"}
+
+TokenExpiredError: jwt expired
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:97:14)
+    at Object.module.exports [as verify] (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:101:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:74:9
+    at new Promise (<anonymous>)
+    at verifyJWT (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:73:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:63:37
+    at Generator.next (<anonymous>)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:31:71
+    at new Promise (<anonymous>)
+
+2024-06-11T08:32:25.676Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:25.677Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:32:25.679Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:32:25.680Z | error | jwt expired | {"NODE_ENV":"development"}
+
+TokenExpiredError: jwt expired
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:97:14)
+    at Object.module.exports [as verify] (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:101:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:74:9
+    at new Promise (<anonymous>)
+    at verifyJWT (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:73:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:63:37
+    at Generator.next (<anonymous>)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:31:71
+    at new Promise (<anonymous>)
+
+2024-06-11T08:32:25.682Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:25.682Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:32:25.684Z | info | ⏩ OPTIONS /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:32:25.684Z | info | ✅ OPTIONS 204 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:32:25.686Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:32:25.687Z | error | jwt expired | {"NODE_ENV":"development"}
+
+TokenExpiredError: jwt expired
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:97:14)
+    at Object.module.exports [as verify] (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:101:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:74:9
+    at new Promise (<anonymous>)
+    at verifyJWT (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:73:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:63:37
+    at Generator.next (<anonymous>)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:31:71
+    at new Promise (<anonymous>)
+
+2024-06-11T08:32:25.688Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:25.690Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:32:26.729Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:32:26.731Z | error | jwt expired | {"NODE_ENV":"development"}
+
+TokenExpiredError: jwt expired
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:97:14)
+    at Object.module.exports [as verify] (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:101:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:74:9
+    at new Promise (<anonymous>)
+    at verifyJWT (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:73:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:63:37
+    at Generator.next (<anonymous>)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:31:71
+    at new Promise (<anonymous>)
+
+2024-06-11T08:32:26.731Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:26.732Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:32:26.734Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:32:26.735Z | error | jwt expired | {"NODE_ENV":"development"}
+
+TokenExpiredError: jwt expired
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:97:14)
+    at Object.module.exports [as verify] (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:101:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:74:9
+    at new Promise (<anonymous>)
+    at verifyJWT (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:73:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:63:37
+    at Generator.next (<anonymous>)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:31:71
+    at new Promise (<anonymous>)
+
+2024-06-11T08:32:26.736Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:26.737Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:32:26.739Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:32:26.742Z | error | jwt expired | {"NODE_ENV":"development"}
+
+TokenExpiredError: jwt expired
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:97:14)
+    at Object.module.exports [as verify] (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:101:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:74:9
+    at new Promise (<anonymous>)
+    at verifyJWT (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:73:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:63:37
+    at Generator.next (<anonymous>)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:31:71
+    at new Promise (<anonymous>)
+
+2024-06-11T08:32:26.743Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:26.743Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:32:28.736Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:32:28.737Z | error | jwt expired | {"NODE_ENV":"development"}
+
+TokenExpiredError: jwt expired
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:97:14)
+    at Object.module.exports [as verify] (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:101:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:74:9
+    at new Promise (<anonymous>)
+    at verifyJWT (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:73:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:63:37
+    at Generator.next (<anonymous>)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:31:71
+    at new Promise (<anonymous>)
+
+2024-06-11T08:32:28.738Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:28.738Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:32:28.740Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:32:28.741Z | error | jwt expired | {"NODE_ENV":"development"}
+
+TokenExpiredError: jwt expired
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:97:14)
+    at Object.module.exports [as verify] (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:101:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:74:9
+    at new Promise (<anonymous>)
+    at verifyJWT (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:73:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:63:37
+    at Generator.next (<anonymous>)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:31:71
+    at new Promise (<anonymous>)
+
+2024-06-11T08:32:28.742Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:28.743Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:32:28.747Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:32:28.748Z | error | jwt expired | {"NODE_ENV":"development"}
+
+TokenExpiredError: jwt expired
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:97:14)
+    at Object.module.exports [as verify] (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:101:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:74:9
+    at new Promise (<anonymous>)
+    at verifyJWT (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:73:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:63:37
+    at Generator.next (<anonymous>)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:31:71
+    at new Promise (<anonymous>)
+
+2024-06-11T08:32:28.749Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:28.750Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:32:32.742Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:32:32.743Z | error | jwt expired | {"NODE_ENV":"development"}
+
+TokenExpiredError: jwt expired
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:97:14)
+    at Object.module.exports [as verify] (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:101:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:74:9
+    at new Promise (<anonymous>)
+    at verifyJWT (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:73:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:63:37
+    at Generator.next (<anonymous>)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:31:71
+    at new Promise (<anonymous>)
+
+2024-06-11T08:32:32.743Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:32.743Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:32:32.747Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:32:32.748Z | error | jwt expired | {"NODE_ENV":"development"}
+
+TokenExpiredError: jwt expired
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:97:14)
+    at Object.module.exports [as verify] (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:101:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:74:9
+    at new Promise (<anonymous>)
+    at verifyJWT (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:73:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:63:37
+    at Generator.next (<anonymous>)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:31:71
+    at new Promise (<anonymous>)
+
+2024-06-11T08:32:32.749Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:32.749Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:32:32.753Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:32:32.754Z | error | jwt expired | {"NODE_ENV":"development"}
+
+TokenExpiredError: jwt expired
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:97:14)
+    at Object.module.exports [as verify] (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/node_modules/jsonwebtoken/verify.js:101:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:74:9
+    at new Promise (<anonymous>)
+    at verifyJWT (/Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/core/jwt.ts:73:10)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:63:37
+    at Generator.next (<anonymous>)
+    at /Users/maximlison/Documents/Documenten - MacBook Pro/School/Toegepaste informatica 2/Semester 2/Software Development II/Web/Backend nieuw/2024-backend-g02-24/src/service/user.ts:31:71
+    at new Promise (<anonymous>)
+
+2024-06-11T08:32:32.755Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:32.755Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:32:44.233Z | info | ⏩ OPTIONS /api/user/login | {"NODE_ENV":"development"}
+2024-06-11T08:32:44.234Z | info | ✅ OPTIONS 204 /api/user/login | {"NODE_ENV":"development"}
+2024-06-11T08:32:44.248Z | info | ⏩ POST /api/user/login | {"NODE_ENV":"development"}
+2024-06-11T08:32:44.270Z | info | ✅ POST 200 /api/user/login | {"NODE_ENV":"development"}
+2024-06-11T08:32:44.290Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:32:44.294Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:32:44.326Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:44.327Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:32:44.330Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:44.332Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:32:45.339Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:32:45.340Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:32:45.343Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:45.343Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:32:45.345Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:45.345Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:32:47.347Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:32:47.349Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:32:47.365Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:47.365Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:32:47.367Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:47.367Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:32:48.154Z | info | ⏩ OPTIONS /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:32:48.155Z | info | ✅ OPTIONS 204 /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:32:48.157Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:32:48.161Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:48.165Z | info | ❌ GET 400 /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:32:49.172Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:32:49.173Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:49.174Z | info | ❌ GET 400 /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:32:51.180Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:32:51.181Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:51.181Z | info | ❌ GET 400 /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:32:51.368Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:32:51.370Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:32:51.372Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:51.373Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:32:51.374Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:51.376Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:32:55.186Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:32:55.186Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:32:55.187Z | info | ❌ GET 400 /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:33:02.760Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:33:02.765Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:33:02.765Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:33:03.771Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:33:03.774Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:33:03.775Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:33:05.780Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:33:05.783Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:33:05.784Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:36:39.748Z | info | Server stopped listening | {"NODE_ENV":"development"}
+2024-06-11T08:36:43.953Z | info | Logger initialized with minimum log level silly | {"NODE_ENV":"development"}
+2024-06-11T08:36:43.956Z | info | 🔁 Initializing connection to the database | {"NODE_ENV":"development"}
+2024-06-11T08:36:43.956Z | info | Connecting to database: mysql://root:root@localhost:3306/delawaredb?serverTimezone=UTC | {"NODE_ENV":"development"}
+2024-06-11T08:36:43.957Z | info | ✅ Successfully initialized connection to the database | {"NODE_ENV":"development"}
+2024-06-11T08:36:44.028Z | info | Server listening on http://localhost:9000 | {"NODE_ENV":"development"}
+2024-06-11T08:36:45.822Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:36:45.838Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:36:45.842Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:36:45.864Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:36:45.867Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:36:45.875Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:36:45.876Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:36:45.898Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:36:46.876Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:36:46.880Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:36:46.893Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:36:46.893Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:36:46.895Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:36:46.896Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:36:48.898Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:36:48.899Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:36:48.902Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:36:48.902Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:36:48.904Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:36:48.905Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:36:51.313Z | info | ⏩ OPTIONS /api/orders/all?role=SUPPLIER&companyId=1&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:36:51.313Z | info | ✅ OPTIONS 204 /api/orders/all?role=SUPPLIER&companyId=1&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:36:51.316Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:36:51.321Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:36:51.329Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:36:51.343Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:36:52.329Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:36:52.352Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:36:52.920Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:36:52.921Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:36:52.923Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:36:52.923Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:36:52.925Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:36:52.925Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:36:53.755Z | info | ⏩ OPTIONS /api/orders/all?role=SUPPLIER&companyId=1&page=3&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:36:53.756Z | info | ✅ OPTIONS 204 /api/orders/all?role=SUPPLIER&companyId=1&page=3&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:36:53.757Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=3&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:36:53.762Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=3&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:36:53.770Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:36:53.791Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:36:54.602Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=3&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:36:54.605Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=3&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:36:59.090Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:36:59.093Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:36:59.713Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:36:59.717Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:37:22.925Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:37:22.928Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:37:22.940Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:37:22.940Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:37:22.943Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:37:22.943Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:37:23.947Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:37:23.948Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:37:23.951Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:37:23.951Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:37:23.953Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:37:23.954Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:37:25.955Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:37:25.957Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:37:25.957Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:37:25.959Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:37:25.962Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:37:25.962Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:37:29.961Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:37:29.964Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:37:29.964Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:37:29.967Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:37:29.970Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:37:29.971Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:37:36.551Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:37:36.556Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:39:19.948Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:39:19.957Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:39:29.969Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:39:29.972Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:39:29.972Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:39:29.974Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:39:29.977Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:39:29.978Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:39:30.976Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:39:30.980Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:39:30.980Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:39:30.983Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:39:30.986Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:39:30.987Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:39:32.985Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:39:32.988Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:39:32.989Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:39:32.990Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:39:32.993Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:39:32.994Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:39:36.992Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:39:36.994Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:39:36.995Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:39:36.996Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:39:36.999Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:39:37.000Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:40:20.599Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:40:20.615Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:42:00.254Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:42:00.276Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:42:02.413Z | info | ⏩ GET /api/company | {"NODE_ENV":"development"}
+2024-06-11T08:42:02.433Z | info | ✅ GET 200 /api/company | {"NODE_ENV":"development"}
+2024-06-11T08:42:02.487Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:42:02.496Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:42:02.499Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:42:02.502Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:42:02.506Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:42:02.507Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:42:02.509Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:42:02.509Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:42:02.510Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:42:02.516Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:42:02.516Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:42:03.512Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:42:03.515Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:42:03.515Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:42:03.517Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:42:03.520Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:42:03.520Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:42:03.558Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:42:03.561Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:42:03.561Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:42:05.110Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:42:05.113Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:42:05.121Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:42:05.125Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:42:05.519Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:42:05.522Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:42:05.522Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:42:05.523Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:42:05.526Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:42:05.527Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:42:05.566Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:42:05.569Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:42:05.569Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:42:07.981Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:42:07.986Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:42:09.527Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:42:09.529Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:42:09.530Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:42:09.531Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:42:09.534Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:42:09.534Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:42:09.573Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:42:09.576Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:42:09.576Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:42:10.650Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:42:10.654Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:42:12.829Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:42:12.832Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:42:16.331Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:42:16.335Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:42:28.580Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:42:28.583Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:42:30.382Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:42:30.386Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:44:02.443Z | info | ⏩ GET /api/company | {"NODE_ENV":"development"}
+2024-06-11T08:44:02.445Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:44:02.449Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:44:02.453Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:44:02.461Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:02.462Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:44:02.486Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:02.488Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:44:02.495Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:44:02.498Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:44:02.502Z | info | ✅ GET 200 /api/company | {"NODE_ENV":"development"}
+2024-06-11T08:44:02.514Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:02.516Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:44:03.472Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:44:03.475Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:03.475Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:44:03.494Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:44:03.498Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:03.498Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:44:03.524Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:44:03.527Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:03.527Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:44:05.478Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:44:05.481Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:05.481Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:44:05.503Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:44:05.506Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:05.507Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:44:05.531Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:44:05.533Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:05.534Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:44:07.885Z | info | ⏩ OPTIONS /api/orders/57669 | {"NODE_ENV":"development"}
+2024-06-11T08:44:07.885Z | info | ✅ OPTIONS 204 /api/orders/57669 | {"NODE_ENV":"development"}
+2024-06-11T08:44:07.886Z | info | ⏩ OPTIONS /api/orders/57669 | {"NODE_ENV":"development"}
+2024-06-11T08:44:07.887Z | info | ✅ OPTIONS 204 /api/orders/57669 | {"NODE_ENV":"development"}
+2024-06-11T08:44:07.888Z | info | ⏩ GET /api/orders/57669 | {"NODE_ENV":"development"}
+2024-06-11T08:44:07.890Z | info | ⏩ OPTIONS /api/orders/57669/items | {"NODE_ENV":"development"}
+2024-06-11T08:44:07.890Z | info | ✅ OPTIONS 204 /api/orders/57669/items | {"NODE_ENV":"development"}
+2024-06-11T08:44:07.892Z | info | ⏩ GET /api/orders/57669/items | {"NODE_ENV":"development"}
+2024-06-11T08:44:07.895Z | info | ✅ GET 200 /api/orders/57669 | {"NODE_ENV":"development"}
+2024-06-11T08:44:07.902Z | info | ⏩ GET /api/orders/57669 | {"NODE_ENV":"development"}
+2024-06-11T08:44:07.905Z | info | ✅ GET 200 /api/orders/57669 | {"NODE_ENV":"development"}
+2024-06-11T08:44:07.974Z | info | ✅ GET 200 /api/orders/57669/items | {"NODE_ENV":"development"}
+2024-06-11T08:44:09.486Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:44:09.489Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:09.489Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:44:09.512Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:44:09.515Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:09.515Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:44:09.537Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:44:09.540Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:09.540Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:44:39.493Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:44:39.496Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:39.496Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:44:39.518Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:44:39.521Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:39.522Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:44:39.544Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:44:39.547Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:39.547Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:44:40.500Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:44:40.503Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:40.503Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:44:40.526Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:44:40.529Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:40.529Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:44:40.552Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:44:40.555Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:40.555Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:44:42.507Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:44:42.510Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:42.510Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:44:42.533Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:44:42.536Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:42.536Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:44:42.559Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:44:42.562Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:42.562Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:44:46.513Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:44:46.517Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:46.517Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:44:46.540Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:44:46.543Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:46.543Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:44:46.566Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:44:46.569Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:44:46.569Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:44:52.517Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:44:52.520Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:46:37.340Z | info | ⏩ GET /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:46:37.344Z | info | ✅ GET 200 /api/orders/all?role=SUPPLIER&companyId=1&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:46:46.572Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:46:46.578Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:46:46.579Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:46:47.585Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:46:47.588Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:46:47.588Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:46:49.592Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:46:49.595Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:46:49.595Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:46:53.600Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:46:53.603Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:46:53.603Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:47:03.501Z | info | ⏩ POST /api/user/login | {"NODE_ENV":"development"}
+2024-06-11T08:47:03.514Z | info | ✅ POST 200 /api/user/login | {"NODE_ENV":"development"}
+2024-06-11T08:47:03.532Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:47:03.534Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:47:03.538Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:47:03.539Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:47:03.542Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:47:03.543Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:47:04.551Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:47:04.552Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:47:04.554Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:47:04.555Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:47:04.557Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:47:04.557Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:47:06.559Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:47:06.561Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:47:06.563Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:47:06.563Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:47:06.565Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:47:06.565Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:47:07.918Z | info | ⏩ OPTIONS /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:47:07.918Z | info | ✅ OPTIONS 204 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:47:07.919Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:47:07.926Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:47:10.568Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:47:10.569Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:47:10.571Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:47:10.571Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:47:10.572Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:47:10.573Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:47:23.609Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:47:23.612Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:47:23.612Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:47:24.617Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:47:24.620Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:47:24.621Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:47:26.625Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:47:26.628Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:47:26.628Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:47:30.633Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:47:30.636Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:47:30.637Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:47:40.577Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:47:40.578Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:47:40.580Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:47:40.580Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:47:40.583Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:47:40.583Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:47:41.585Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:47:41.587Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:47:41.589Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:47:41.589Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:47:41.591Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:47:41.591Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:47:43.593Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:47:43.594Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:47:43.596Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:47:43.596Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:47:43.598Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:47:43.598Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:47:47.600Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:47:47.601Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:47:47.604Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:47:47.604Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:47:47.606Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:47:47.607Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:47:58.921Z | info | ⏩ OPTIONS /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:47:58.921Z | info | ✅ OPTIONS 204 /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:47:58.922Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:47:58.926Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:47:58.937Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:47:58.940Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:48:00.326Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:48:00.329Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:48:00.640Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:48:00.644Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:48:00.644Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:48:01.650Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:48:01.653Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:48:01.653Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:48:02.495Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:48:02.500Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:48:03.657Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:48:03.659Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:48:03.660Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:48:04.792Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:48:04.796Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:48:07.045Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:48:07.049Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:48:07.663Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:48:07.665Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:48:07.666Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:50:27.559Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:50:27.566Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:50:37.669Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:50:37.672Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:50:37.673Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:50:38.677Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:50:38.680Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:50:38.680Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:50:40.684Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:50:40.688Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:50:40.688Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:50:44.691Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:50:44.694Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:50:44.694Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:50:47.609Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:50:47.612Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:50:47.612Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:50:47.613Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:50:47.615Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:50:47.616Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:50:48.618Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:50:48.619Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:50:48.621Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:50:48.623Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:50:48.624Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:50:48.624Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:50:50.626Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:50:50.627Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:50:50.629Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:50:50.629Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:50:50.632Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:50:50.632Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:50:54.632Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:50:54.635Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:50:54.635Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:50:54.636Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:50:54.639Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:50:54.639Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:51:14.700Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:51:14.703Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:51:14.703Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:51:15.707Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:51:15.710Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:51:15.711Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:51:17.714Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:51:17.717Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:51:17.718Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:51:21.723Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:51:21.725Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:51:21.726Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:51:24.640Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:51:24.643Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:51:24.644Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:51:24.645Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:51:24.648Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:51:24.649Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:51:25.650Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:51:25.652Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:51:25.654Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:51:25.654Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:51:25.656Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:51:25.657Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:51:27.659Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:51:27.661Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:51:27.663Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:51:27.663Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:51:27.665Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:51:27.665Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:51:31.668Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:51:31.669Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:51:31.671Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:51:31.671Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:51:31.673Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:51:31.673Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:51:51.730Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:51:51.733Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:51:51.734Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:51:52.738Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:51:52.741Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:51:52.742Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:51:54.745Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:51:54.748Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:51:54.748Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:51:58.754Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:51:58.757Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:51:58.757Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:52:01.677Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:52:01.680Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:52:01.680Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:52:01.681Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:52:01.684Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:52:01.685Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:52:02.684Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:52:02.687Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:52:02.687Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:52:02.688Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:52:02.691Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:52:02.691Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:52:04.691Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:52:04.694Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:52:04.694Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:52:04.696Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:52:04.698Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:52:04.699Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:52:08.699Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:52:08.703Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:52:08.703Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:52:08.704Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:52:08.708Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:52:08.708Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:52:28.762Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:52:28.765Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:52:28.765Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:52:29.769Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:52:29.773Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:52:29.774Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:52:31.778Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:52:31.781Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:52:31.781Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:52:35.785Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:52:35.788Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:52:35.789Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:52:38.708Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:52:38.712Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:52:38.712Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:52:38.713Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:52:38.717Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:52:38.718Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:52:39.718Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:52:39.721Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:52:39.722Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:52:39.723Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:52:39.726Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:52:39.726Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:54:13.700Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:54:13.706Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:54:35.829Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:54:35.833Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:54:35.833Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:54:36.853Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:54:36.856Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:54:36.856Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:54:38.860Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:54:38.863Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:54:38.863Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:54:42.868Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:54:42.871Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:54:42.871Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:55:12.039Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:55:12.043Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:55:12.892Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:55:12.894Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:55:12.895Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:55:13.913Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:55:13.918Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:55:13.918Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:57:39.377Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:39.394Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:46.538Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:46.543Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:46.549Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:46.553Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:49.129Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:49.143Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:50.361Z | info | ⏩ OPTIONS /api/orders/all?role=CUSTOMER&companyId=2&page=3&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:50.361Z | info | ✅ OPTIONS 204 /api/orders/all?role=CUSTOMER&companyId=2&page=3&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:50.363Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=3&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:50.366Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=3&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:50.373Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:50.393Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:51.206Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=3&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:51.210Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=3&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:55.746Z | info | ⏩ GET /api/company | {"NODE_ENV":"development"}
+2024-06-11T08:57:55.761Z | info | ✅ GET 200 /api/company | {"NODE_ENV":"development"}
+2024-06-11T08:57:55.794Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:57:55.798Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:57:55.801Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:55.812Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:57:55.813Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:57:55.815Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:55.816Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:57:55.830Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:57:55.830Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:57:55.857Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:57:55.880Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:57:56.818Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:57:56.821Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:57:56.821Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:57:56.881Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:57:56.888Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:57:56.906Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:57:56.907Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:57:56.910Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:57:56.910Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:57:58.636Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:58.644Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:58.651Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:58.654Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:57:58.826Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:57:58.844Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:57:58.844Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:57:58.913Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:57:58.914Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:57:58.916Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:57:58.917Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:57:58.918Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:57:58.918Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:58:01.661Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:58:01.664Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:58:02.848Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:58:02.851Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:02.851Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:58:02.920Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:58:02.922Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:58:02.925Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:02.925Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:58:02.926Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:02.927Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:58:04.029Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=3&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:58:04.041Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:58:04.043Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=3&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:58:04.047Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:58:05.690Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=3&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:58:05.693Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=3&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:58:13.824Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:58:13.844Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:58:14.825Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:58:14.844Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:58:34.294Z | info | ⏩ GET /api/company | {"NODE_ENV":"development"}
+2024-06-11T08:58:34.295Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:58:34.296Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:58:34.298Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:58:34.299Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:58:34.303Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:34.303Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:58:34.305Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:34.306Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:58:34.306Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:58:34.309Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:34.310Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:58:34.314Z | info | ✅ GET 200 /api/company | {"NODE_ENV":"development"}
+2024-06-11T08:58:35.307Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:58:35.309Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:58:35.311Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:35.311Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:58:35.314Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:35.314Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:58:35.315Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:58:35.318Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:35.318Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:58:37.316Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:58:37.318Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:58:37.321Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:37.321Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:58:37.323Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:37.323Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:58:37.324Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:58:37.344Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:37.344Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:58:41.325Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:58:41.327Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:58:41.344Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:41.345Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:58:41.346Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:41.347Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:58:41.350Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:58:41.354Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:41.354Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:58:50.358Z | info | ⏩ GET /api/company | {"NODE_ENV":"development"}
+2024-06-11T08:58:50.359Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:58:50.362Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:58:50.366Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:50.368Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:58:50.370Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:58:50.375Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:58:50.400Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:50.401Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:58:50.402Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:58:50.405Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:50.405Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:58:50.409Z | info | ✅ GET 200 /api/company | {"NODE_ENV":"development"}
+2024-06-11T08:58:51.374Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:58:51.394Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:51.394Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:58:51.405Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:58:51.408Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:51.409Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:58:51.410Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:58:51.413Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:51.414Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:58:53.422Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:58:53.424Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:53.425Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:58:53.443Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:58:53.444Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:58:53.447Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:53.448Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:58:53.449Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:53.450Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:58:57.465Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:58:57.468Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:57.468Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:58:57.485Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:58:57.494Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:57.494Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:58:57.507Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:58:57.510Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:58:57.510Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:59:22.956Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:59:22.959Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:59:25.271Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:59:25.274Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:59:27.498Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:59:27.501Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:59:27.501Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:59:27.517Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:59:27.519Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:59:27.520Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:59:27.540Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:59:27.543Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:59:27.543Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:59:28.519Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:59:28.522Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:59:28.522Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:59:28.537Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:59:28.540Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:59:28.541Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:59:28.555Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:59:28.558Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:59:28.558Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:59:29.024Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:59:29.034Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=2&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:59:30.535Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:59:30.538Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:59:30.538Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:59:30.553Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:59:30.555Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:59:30.555Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:59:30.571Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:59:30.573Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:59:30.574Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:59:32.305Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:59:32.308Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T08:59:34.553Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:59:34.556Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:59:34.556Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T08:59:34.568Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:59:34.570Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:59:34.571Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T08:59:34.586Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T08:59:34.589Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T08:59:34.589Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T09:02:35.613Z | info | ⏩ GET /api/company | {"NODE_ENV":"development"}
+2024-06-11T09:02:35.614Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T09:02:35.615Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T09:02:35.616Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T09:02:35.617Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T09:02:35.621Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T09:02:35.622Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T09:02:35.623Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T09:02:35.624Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T09:02:35.625Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T09:02:35.630Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T09:02:35.630Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T09:02:35.633Z | info | ✅ GET 200 /api/company | {"NODE_ENV":"development"}
+2024-06-11T09:02:36.627Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T09:02:36.629Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T09:02:36.631Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T09:02:36.631Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T09:02:36.635Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T09:02:36.636Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T09:02:36.636Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T09:02:36.639Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T09:02:36.640Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T09:14:32.147Z | info | ⏩ GET /api/company | {"NODE_ENV":"development"}
+2024-06-11T09:14:32.148Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T09:14:32.150Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T09:14:32.153Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T09:14:32.155Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T09:14:32.160Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T09:14:32.161Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T09:14:32.163Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T09:14:32.164Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T09:14:32.165Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T09:14:32.166Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T09:14:32.169Z | info | ✅ GET 200 /api/company | {"NODE_ENV":"development"}
+2024-06-11T09:14:32.171Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T09:15:41.779Z | info | ⏩ GET /api/company | {"NODE_ENV":"development"}
+2024-06-11T09:15:41.780Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T09:15:41.781Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T09:15:41.782Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T09:15:41.783Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T09:15:41.786Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T09:15:41.790Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T09:15:41.790Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T09:15:41.792Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T09:15:41.792Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T09:15:41.795Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T09:15:41.796Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T09:15:41.798Z | info | ✅ GET 200 /api/company | {"NODE_ENV":"development"}
+2024-06-11T09:27:04.937Z | info | ⏩ GET /api/company | {"NODE_ENV":"development"}
+2024-06-11T09:27:04.951Z | info | ✅ GET 200 /api/company | {"NODE_ENV":"development"}
+2024-06-11T09:27:04.996Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T09:27:05.002Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T09:27:05.007Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T09:27:05.016Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T09:27:05.049Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T09:27:05.051Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T09:27:05.052Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T09:27:05.057Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T09:27:05.057Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T09:27:05.060Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T09:27:05.061Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T09:27:06.055Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T09:27:06.058Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T09:27:06.059Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T09:27:06.115Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T09:27:06.118Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T09:27:06.118Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T09:27:06.127Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T09:27:06.130Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T09:27:06.130Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T09:30:37.644Z | info | ⏩ GET /api/company | {"NODE_ENV":"development"}
+2024-06-11T09:30:37.647Z | info | ⏩ GET /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
+2024-06-11T09:30:37.652Z | info | ⏩ GET /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T09:30:37.655Z | info | ⏩ GET /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T09:30:37.658Z | info | ⏩ GET /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T09:30:37.662Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T09:30:37.663Z | info | 💀 GET 500 /api/notifications/unread-count | {"NODE_ENV":"development"}
+2024-06-11T09:30:37.667Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T09:30:37.668Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=5 | {"NODE_ENV":"development"}
+2024-06-11T09:30:37.673Z | error | Error occurred while handling a request | {"NODE_ENV":"development"}
+2024-06-11T09:30:37.673Z | info | 💀 GET 500 /api/notifications?page=1&pageAmount=50&status=NEW | {"NODE_ENV":"development"}
+2024-06-11T09:30:37.675Z | info | ✅ GET 200 /api/company | {"NODE_ENV":"development"}
+2024-06-11T09:30:37.678Z | info | ✅ GET 200 /api/orders/all?role=CUSTOMER&companyId=2&page=1&pageAmount=20&companyName=&orderReference= | {"NODE_ENV":"development"}
